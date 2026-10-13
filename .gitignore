@@ -1,0 +1,14 @@
+.venv/
+node_modules/
+dist/
+build/
+__pycache__/
+*.pyc
+*.o
+*.so
+*.exe
+*.dll
+.env
+data/scans/
+data/exports/
+data/logs/

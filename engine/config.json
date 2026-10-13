@@ -1,0 +1,74 @@
+{
+    "decode": {
+        "bits": 10,
+        "threshold": 10,
+        "useAdaptiveThreshold": 1,
+        "maxLg": 230,
+        "whiteIndex": 40,
+        "blackIndex": 41,
+        "horizontalStart": 0,
+        "verticalStart": 20
+    },
+    "filter": {
+        "reproj_max_err_px": 15.0,
+        "spatial_max_jump": 5.0,
+        "iqr_scale": 1.2000000476837158
+    },
+    "triangulator": {
+        "z_min": 300.0,
+        "z_max": 2000.0,
+        "x_min": -1000000.0,
+        "x_max": 1000000.0,
+        "y_min": -1000000.0,
+        "y_max": 1000000.0,
+        "icp_iter": 80,
+        "icp_dist_mm": 15.0,
+        "icp_knn_k": 5,
+        "icp_normal_max_deg": 65.0,
+        "icp_trim_ratio": 0.69999998807907104,
+        "icp_conv_mm": 0.10000000149011612,
+        "icp_reg_ty_weight": 20.0,
+        "icp_reg_axis_x": 0.0,
+        "icp_reg_axis_y": 1.0,
+        "icp_reg_axis_z": 0.0,
+        "icp_loop_closure_enable": 1,
+        "icp_global_refine_iters": 2,
+        "turntable_poses": 12,
+        "turntable_step_deg": 0.0,
+        "turntable_sign": 1,
+        "turntable_axis_x": 0.0,
+        "turntable_axis_y": 1.0,
+        "turntable_axis_z": 0.0,
+        "turntable_center_x": 0.0,
+        "turntable_center_y": 0.0,
+        "turntable_center_z": 0.0,
+        "object_radius_mm": 40.0
+    },
+    "app": {
+        "proj_w": 1024,
+        "proj_h": 768,
+        "camera_url": 0,
+        "objectDataRoot": "Object_data",
+        "cameraCalibFile": "camera_calibration.json",
+        "projectorCalibFile": "projector_calibration.json"
+    },
+    "projectorCalib": {
+        "previewW": 1024,
+        "previewH": 768,
+        "board_cols": 9,
+        "board_rows": 7,
+        "squareSize_mm": 23.0,
+        "threshold": 35,
+        "patchRadius": 2,
+        "minDecodePoints": 15,
+        "warmupFrames": 5,
+        "patternDelayMs": 300,
+        "minPoses": 5
+    },
+    "poseEstimation": {
+        "pose_coarse_angle_step_deg": 15.0,
+        "pose_min_live_points": 500,
+        "pose_max_accept_fitness_mm": 5.0,
+        "modelRoot": "Object_models"
+    }
+}

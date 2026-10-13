@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.16)
+project(scan3d_engine LANGUAGES CXX)
+set(CMAKE_CXX_STANDARD 17)
+find_package(OpenCV REQUIRED)
+file(GLOB SOURCES CONFIGURE_DEPENDS src/*.cpp)
+add_executable(scan3d_engine ${SOURCES})
+target_include_directories(scan3d_engine PRIVATE ${OpenCV_INCLUDE_DIRS})
+target_link_libraries(scan3d_engine PRIVATE ${OpenCV_LIBS})
