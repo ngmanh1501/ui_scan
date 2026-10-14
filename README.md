@@ -224,6 +224,4 @@ Nếu source thay đổi dependencies hoặc C++, chạy lại `launcher.py setu
 
 ---
 
-**Repository:** https://github.com/ngmanh1501/ui_scan
-#   u i _ s c a n  
- 
+**Repository:** https://github.com/ngmanh1501/ui_scanA
